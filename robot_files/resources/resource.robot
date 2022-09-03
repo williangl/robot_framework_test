@@ -11,7 +11,7 @@ ${SERVER_URL}   https://${SERVER}/
 ${BROWSER}        Chrome
 
 *** Keywords ***
-Open Browser To Google Page
+Open Browser On Google Page
     Open Browser    ${SERVER_URL}    ${BROWSER}
 
 Input Data
@@ -22,4 +22,4 @@ Click on search button
     Press Keys    class:gLFyf    RETURN
 
 Element should exist on page
-    Element Should Contain    css:GmE3X    Principais notícias
+    Element Should Contain    xpath://h3[@class="GmE3X"]    Principais notícias
